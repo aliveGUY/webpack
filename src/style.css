@@ -28,14 +28,41 @@ li {
 }
 
 li button {
+  cursor: pointer;
+  
+  border: none;
+  color: #fff;
+  width: 30px;
+}
+
+.Edit {
   margin-left: auto;
+  background-color: #8edbff;
+  background-image: url(./img/pen.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Edit:active {
+  background-color: #5e9cb9;
+}
+
+.Delete {
+  margin-left: 10px;
+  background-color: rgb(196, 44, 44);
+  
+}
+
+.Delete:active {
+  background-color: rgb(226, 28, 28);
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  min-width: 500px;
+  width: 60vw;
   min-height: 100px;
   box-shadow: 0.1px 0.1px 2px black;
 }
@@ -49,8 +76,14 @@ li button {
   border: none;
   margin-top: auto;
   padding: 10px;
+  cursor: pointer;
+}
+
+.List-clear:active {
+  text-decoration: underline;
 }
 
 input:checked + label {
   text-decoration: line-through;
 }
+
