@@ -1,3 +1,56 @@
-body {
-    background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #f8f8f8;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Title p {
+  padding: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li {
+  padding: 10px;
+  display: flex;
+}
+
+li button {
+  margin-left: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  min-width: 500px;
+  min-height: 100px;
+  box-shadow: 0.1px 0.1px 2px black;
+}
+
+.List-add {
+  border: none;
+  padding: 10px;
+}
+
+.List-clear {
+  border: none;
+  margin-top: auto;
+  padding: 10px;
+}
+
+input:checked + label {
+  text-decoration: line-through;
 }
