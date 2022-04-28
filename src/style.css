@@ -29,6 +29,7 @@ li {
 
 li button {
   cursor: pointer;
+  margin-left: auto;
   
   border: none;
   color: #fff;
@@ -36,7 +37,6 @@ li button {
 }
 
 .Edit {
-  margin-left: auto;
   background-color: #8edbff;
   background-image: url(./img/pen.svg);
   background-position: center;
@@ -48,8 +48,20 @@ li button {
   background-color: #5e9cb9;
 }
 
+.Edit span {
+  transform: translate(-50%, 50%);
+  position: absolute;
+  z-index: 1;
+}
+
+.Edit span input {
+  padding: 3px;
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .Delete {
-  margin-left: 10px;
   background-color: rgb(196, 44, 44);
   
 }
@@ -87,3 +99,6 @@ input:checked + label {
   text-decoration: line-through;
 }
 
+label[contenteditable] {
+  background-color: #fdff8e;
+}

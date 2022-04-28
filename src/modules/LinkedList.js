@@ -22,14 +22,14 @@ export default class LinkedList {
     return this;
   }
 
-  delete(value) {
+  delete(index) {
     if(!this.head){
       return null;
     }
 
     let deletedNode = null;
 
-    while(this.head && this.head.value === value) {
+    while(this.head && this.head.index === parseInt(index)) {
       deletedNode = this.head;
       this.head = this.head.next;
     }
@@ -38,9 +38,8 @@ export default class LinkedList {
 
     if(currentNode !== null) {
       while (currentNode.next){
-        if(currentNode.next.value === value) {
+        if(currentNode.next.index === parseInt(index)) {
           
-
           deletedNode = currentNode.next;
           currentNode.next = currentNode.next.next;
         } else {
@@ -49,7 +48,7 @@ export default class LinkedList {
       }
     }
 
-    if(this.tail?.value === value) {
+    if(this.tail?.index === parseInt(index)) {
       this.tail = currentNode;
     }
     return deletedNode;
