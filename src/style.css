@@ -1,3 +1,106 @@
-body {
-    background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #f8f8f8;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Title p {
+  padding: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li {
+  padding: 10px;
+  display: flex;
+}
+
+li button {
+  cursor: pointer;
+  margin-left: auto;
+  border: none;
+  color: #fff;
+  width: 30px;
+}
+
+.Edit {
+  background-color: #8edbff;
+  background-image: url(./img/pen.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Edit:active {
+  background-color: #5e9cb9;
+}
+
+.Edit span {
+  transform: translate(-50%, 50%);
+  position: absolute;
+  z-index: 1;
+}
+
+.Edit span input {
+  padding: 3px;
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.Delete {
+  background-color: rgb(245, 100, 100);
+  background-image: url(./img/trash-can.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Delete:active {
+  background-color: rgb(226, 28, 28);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 60vw;
+  min-height: 100px;
+  box-shadow: 0.1px 0.1px 2px black;
+}
+
+.List-add {
+  border: none;
+  padding: 10px;
+}
+
+.List-clear {
+  border: none;
+  margin-top: auto;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.List-clear:active {
+  text-decoration: underline;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+}
+
+label[contenteditable] {
+  background-color: #fdff8e;
 }
