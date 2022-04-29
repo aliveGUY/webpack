@@ -1,2 +1,2 @@
 import './style.css';
-import './modules/Draw.js'
+import './modules/Draw.js';

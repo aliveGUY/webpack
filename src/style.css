@@ -30,7 +30,6 @@ li {
 li button {
   cursor: pointer;
   margin-left: auto;
-  
   border: none;
   color: #fff;
   width: 30px;
@@ -63,7 +62,6 @@ li button {
 
 .Delete {
   background-color: rgb(196, 44, 44);
-  
 }
 
 .Delete:active {
