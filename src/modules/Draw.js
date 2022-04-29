@@ -73,16 +73,19 @@ Input.addEventListener('keyup', (e) => {
 });
 
 window.onload = () => {
-  refresh();
-  refreshDom();
+  
 
   EdtBtn.forEach((item) => {
     item.onclick = () => {
+      refresh();
+      refreshDom();
       edit(item, list);
     };
   });
   SltBtn.forEach((item) => {
     item.onchange = () => {
+      refresh();
+      refreshDom();
       list.toArray()[item.parentNode.id].completed = item.checked;
       localStorage.setItem('Data', JSON.stringify(list.toArray()));
     };
