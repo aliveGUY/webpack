@@ -61,7 +61,11 @@ li button {
 }
 
 .Delete {
-  background-color: rgb(196, 44, 44);
+  background-color: rgb(245, 100, 100);
+  background-image: url(./img/trash-can.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .Delete:active {

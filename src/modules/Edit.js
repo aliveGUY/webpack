@@ -43,4 +43,12 @@ export default function edit(item, list) {
       item.parentElement.children[1].removeAttribute('contenteditable');
     }
   });
+  item.parentElement.children[1].addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      item.classList.add('Edit');
+      item.classList.remove('Delete');
+      item.parentElement.children[1].removeAttribute('contenteditable');
+    }
+  });
 }

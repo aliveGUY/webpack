@@ -28,6 +28,8 @@ export const refresh = () => {
     item.onchange = () => {
       list.toArray()[item.parentNode.id].completed = item.checked;
       localStorage.setItem('Data', JSON.stringify(list.toArray()));
+      refresh();
+      refreshDom();
     };
   });
 
@@ -35,6 +37,8 @@ export const refresh = () => {
   EdtBtn.forEach((item) => {
     item.onclick = () => {
       edit(item, list);
+      refresh();
+      refreshDom();
     };
   });
 
