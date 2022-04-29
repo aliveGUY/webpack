@@ -73,8 +73,6 @@ Input.addEventListener('keyup', (e) => {
 });
 
 window.onload = () => {
-  
-
   EdtBtn.forEach((item) => {
     item.onclick = () => {
       refresh();
