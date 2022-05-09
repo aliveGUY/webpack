@@ -2,6 +2,8 @@
 
 # To-Do List
 
+A simple TO-DO list using Linked lists
+
 ## Built With
 
 - JS
